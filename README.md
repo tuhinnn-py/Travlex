@@ -1,5 +1,22 @@
 ### Travlex (v.0.1.0)
 ---
+*   ***Download Java Media Framework***
+*   ***Open Git bash***
+*   ***Clone the repository***
+      ```
+      cd Desktop
+      git clone https://github.com/tuhinnn-py/Travlex.git
+      ```
+*   ***Setup Netbeans IDE***
+      -   *Open NetBeans IDE and left click on the Open Project in the File tab*
+      -   *Navigate to the directory where you cloned the repository*
+      -   *Right-click on the project name in the Projects tab.*
+      -   *Select Properties.*
+      -   *Select Libraries.*
+      -   *Click the Add Jar/Folder button.*
+      -   *Navigate to the directory where the downloaded JAR files for JMF are. In this case, it's generally C:\Program Files(x86)\JMF2.1.1e\lib*
+      -   *Select all the 5 jar files and add them*
+---
 
 ![](https://github.com/tuhinnn-py/Travlex/blob/master/Log_In.gif)
 
