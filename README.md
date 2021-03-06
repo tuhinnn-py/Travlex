@@ -1,5 +1,6 @@
 ### Travlex (v.0.1.0)
 ---
+#### Installation
 *   ***Download Java Media Framework***
 *   ***Open Git bash***
 *   ***Clone the repository***
