@@ -1,13 +1,27 @@
 ### Travlex (v.0.1.0)
 ---
-#### Installation
-*   ***Download Java Media Framework***
+#### Installation 
 *   ***Open Git bash***
 *   ***Clone the repository***
       ```
-      cd Desktop
+      cd "type-your-desired-directory-name-here"
       git clone https://github.com/tuhinnn-py/Travlex.git
       ```
+*   ***Navigate to the cloned repository and open Hotel_Management. Double click on hotel_Management.jar to run the application***
+*   ***Alternatively run it through cmd***
+      ```
+      cd "type-your-desired-directory-name-here"
+      java -jar Hotel_Management.jar
+      ```
+---      
+#### Netbeans Installation
+*   ***Open Git bash***
+*   ***Clone the repository***
+      ```
+      cd "type-your-desired-directory-name-here"
+      git clone https://github.com/tuhinnn-py/Travlex.git
+      ```
+*   ***Download Java Media Framework***
 *   ***Setup Netbeans IDE***
       -   *Open NetBeans IDE and left click on the Open Project in the File tab*
       -   *Navigate to the directory where you cloned the repository*
