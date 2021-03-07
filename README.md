@@ -10,7 +10,7 @@
 *   ***Navigate to the cloned repository and open Hotel_Management. Double click on hotel_Management.jar to run the application***
 *   ***Alternatively run it through cmd***
       ```
-      cd "type-your-desired-directory-name-here"
+      cd "type-your-desired-directory-name-here"\Travlex\Hotel_Management
       java -jar Hotel_Management.jar
       ```
 ---      
