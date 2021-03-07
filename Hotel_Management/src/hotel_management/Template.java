@@ -322,11 +322,11 @@ public class Template extends JFrame
     public void add_utilities()
     {
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        int w = (int) screenSize.getWidth();
-        int h = (int) screenSize.getHeight();
+        int w = (int) (screenSize.getWidth() / 2);
+        int h = (int) (screenSize.getHeight() / 2);
         
-        this.setLocation(new Point(0, 0));
-        this.setSize(w, h);
+        this.setLocation(new Point(w - 640, h - 400));
+        this.setSize(1280, 800);
         this.getContentPane().setBackground(Color.black);
         
         this.setLayout(null);
