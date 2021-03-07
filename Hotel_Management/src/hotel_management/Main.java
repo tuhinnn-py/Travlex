@@ -484,12 +484,12 @@ public class Main extends JFrame implements MouseListener
     public void add_utilities(JFrame frame, JPanel panel, String title)
     {
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        int w = (int) screenSize.getWidth();
-        int h = (int) screenSize.getHeight();
+        int w = (int) (screenSize.getWidth() / 2);
+        int h = (int) (screenSize.getHeight() / 2);
         
-        frame.setLocation(new Point(0, 0));
-        frame.setSize(w, h);
-        panel.setBounds(0, 0, w, h);
+        frame.setLocation(new Point(w - 640, h - 400));
+        frame.setSize(1280, 800);
+        panel.setBounds(0, 0, 1280, 800);
         
         frame.setTitle(title);
         frame.setLayout(null);
