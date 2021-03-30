@@ -34,7 +34,7 @@ public class HotelManager
         
         catch(IOException | ClassNotFoundException e)
         {
-            System.err.println(e + " | No hotels records exist yet");
+            System.err.println("No hotels records exist yet | " + e);
             list = new ArrayList<>();
         }
         
@@ -51,19 +51,24 @@ public class HotelManager
         System.out.println("Writing hotels to persistence");
         File file = new File("Hotels.ser");
         
-        try
+        if(!hotels.isEmpty())
         {
-            FileOutputStream f = new FileOutputStream(file);
-            ObjectOutputStream obj = new ObjectOutputStream(f);
-            
-            obj.writeObject(hotels);
-            obj.close();
+            try
+            {
+                FileOutputStream f = new FileOutputStream(file);
+                ObjectOutputStream obj = new ObjectOutputStream(f);
+
+                obj.writeObject(hotels);
+                obj.close();
+            }
+
+            catch(IOException e)
+            {
+                System.err.println("Error occured while writing data | " + e);
+            }
         }
-        
-        catch(IOException e)
-        {
-            System.err.println(e + "Error occured while writing data");
-        }
+        else
+            System.err.println("Error occured while writing data.");
     }
     
     public void add_hotel(String hotel_name, double price)

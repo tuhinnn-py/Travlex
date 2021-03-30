@@ -189,7 +189,11 @@ public class Main extends JFrame implements MouseListener
         hotels.setRenderer(new PromptComboBoxRenderer("                                           ----  Select a hotel  ----"));
         hotels.setSelectedIndex(-1);
         hotels.setBackground(new Color(255, 255, 255));
-        hotels.setFont(new Font("Lucida Fax", Font.BOLD, 16));
+        if(hotel_list.length > 0)
+            hotels.setForeground(new Color(0, 0, 0));
+        else
+            hotels.setForeground(new Color(200, 75, 73));
+        hotels.setFont(new Font("Lucida Fax", Font.BOLD, 14));
         hotels.setFocusable(false);
         hotels.setBounds(600, 350, 640, 25);
         hotels.addMouseListener(this);

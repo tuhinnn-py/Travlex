@@ -12,9 +12,16 @@ public class MainManager
     
     public MainManager()
     {
+        //initialise all the control class objects ie. Managers
+        init();
+    }
+    
+    public void init()
+    {
         this.u_manager = new UserManager();
         this.h_manager = new HotelManager();
         this.b_manager = new BookingManager();
+        this.d_manager = new DisplayManager(this);
     }
     
     public BookingManager get_b_manager()
@@ -43,7 +50,6 @@ public class MainManager
     {
         SwingUtilities.invokeLater(() -> {
             MainManager main_manager = new MainManager();
-            main_manager.d_manager = new DisplayManager(main_manager);
 
             //power up the UI through the Display Manager's UI API
             main_manager.d_manager.call_main();
