@@ -98,8 +98,7 @@ public class SignUp extends JFrame
     {
         //creating a dummy file to get the absolute path
         File file = new File("_");
-        String path = file.getAbsolutePath().replace("\\", "\\\\");
-        
+        String path = file.getAbsolutePath();
         return path.substring(0, path.length() - 1);
     }
     

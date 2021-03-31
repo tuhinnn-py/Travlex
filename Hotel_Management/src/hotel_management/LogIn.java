@@ -86,9 +86,7 @@ public class LogIn extends JFrame
         add_panel(this, handle);
         add_utilities(this, title);
         try 
-        {
-            
-            
+        {   
             add_video((Container)this, new URL("file:\\" + location + "City.avi"), true);
         } 
         catch (MalformedURLException ex) 
@@ -104,8 +102,7 @@ public class LogIn extends JFrame
     {
         //creating a dummy file to get the absolute path
         File file = new File("_");
-        String path = file.getAbsolutePath().replace("\\", "\\\\");
-        
+        String path = file.getAbsolutePath();
         return path.substring(0, path.length() - 1);
     }
     
